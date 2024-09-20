@@ -5,6 +5,6 @@ public class WeightliftingActivity extends Activity {
 
     @Override
     public double calculateCaloriesBurned() {
-        return duration * 5; 
+        return duration * 5; // Custom calculation for weightlifting
     }
 }
