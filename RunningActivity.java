@@ -5,6 +5,6 @@ public class RunningActivity extends Activity {
 
     @Override
     public double calculateCaloriesBurned() {
-        return duration * 12;
+        return duration * 12; // Custom calculation for running
     }
 }
