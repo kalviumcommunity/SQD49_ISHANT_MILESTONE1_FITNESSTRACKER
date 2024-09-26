@@ -6,13 +6,12 @@ public class User {
     private double totalCaloriesBurned;
     private String fitnessGoal;
 
-    // Constructor
     public User(String name, int age, double weight) {
         this.name = name;
         this.age = age;
         this.weight = weight;
-        this.fitnessLevel = 50; // Default fitness level
-        this.totalCaloriesBurned = 0; // Initially no calories burned
+        this.fitnessLevel = 50; 
+        this.totalCaloriesBurned = 0; 
     }
 
     public void logWorkout(Activity activity) {

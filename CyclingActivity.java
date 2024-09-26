@@ -1,10 +1,10 @@
 public class CyclingActivity extends Activity {
     public CyclingActivity(int duration) {
-        super("Cycling", duration);
+        super("Cycling", duration); 
     }
 
     @Override
     public double calculateCaloriesBurned() {
-        return duration * 8; // Custom calculation for cycling
+        return duration * 8; 
     }
 }

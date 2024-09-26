@@ -1,24 +1,26 @@
 public class FitnessTrackerApp {
     public static void main(String[] args) {
-        // Create an array to hold User objects
-        User[] users = new User[3]; // Array for 3 users
+        
+        User[] users = new User[3];
 
-        // Initialize the User objects
         users[0] = new User("Alice", 25, 65.0);
         users[1] = new User("Bob", 30, 75.0);
         users[2] = new User("Charlie", 28, 80.0);
 
-        // Create Activity objects
-        Activity running = new RunningActivity(30);
-        Activity cycling = new CyclingActivity(45);
-        Activity weightlifting = new WeightliftingActivity(60);
+        Activity running = new RunningActivity(30); 
+        Activity cycling = new CyclingActivity(45); 
 
-        // Log workouts and generate reports for each user
         for (User user : users) {
-            user.logWorkout(running);
-            user.logWorkout(cycling);
-            user.logWorkout(weightlifting);
-            user.generateProgressReport(); // Generate report for each user
+            user.logWorkout(running);   
+            user.logWorkout(cycling);   
+            user.generateProgressReport(); 
+        }
+
+        Activity weightlifting = new WeightliftingActivity(60); 
+        users[0].logWorkout(weightlifting); 
+
+        for (User user : users) {
+            user.generateProgressReport();
         }
     }
 }
